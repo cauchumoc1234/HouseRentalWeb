@@ -16,8 +16,11 @@
 <body>
     <div class="root">
         <div class="header">
+            <!-- thanh header -->
             <div class="top-bar">
+                <!-- thanh phía trên header -->
                 <div class="large">
+                    <a href="login.html">Đăng nhập / </a><a href="">Đăng ký</a>
                     <span>
                         <i class="fa fa-download" aria-hidden="true"></i>
                         <span>TẢI APP</span>
@@ -27,21 +30,24 @@
                         <span>Đăng phòng dễ dàng</span>
                     </span>
                 </div>
+                <!-- thanh phía trên header -->
+
+                <!-- phần thanh tìm kiếm phụ,hiện ra khi scroll qua thanh tìm kiếm chính -->
                 <div class="extra-menu">
                     <a href="index.html" class="logo">
                         <img src="https://www.ohanaliving.vn/8541c2b17a0729942ed2a6f13b7b13e4.svg" alt="logo">
                     </a>
+                    <!-- form tìm kiếm -->
                     <div class="search-box">
                         <div class="dropdown">
-                            <button type="button" class="dropBtn" id="mapMarkerButton"><i class="fas fa-map-marker-alt icon"></i>
-                                Vị trí
-                            </button>
-
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Hà Nội</a>
-                                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                                <a class="dropdown-item" href="#">TP.Hồ Chí Minh</a>
-                            </div>
+                            <span><i class="fas fa-map-marker-alt icon"></i></span>
+                            <!-- nút chọn vị trí -->
+                            <select name="city" id="" class="dropBtn">
+                                <option value="" selected>Tất cả thành phố</option>
+                                <option value="Hanoi">Hà Nội</option>
+                                <option value="">Đà Nẵng</option>
+                                <option value="">TP. Hồ Chí Minh</option>
+                            </select>
                         </div>
                         <form action="" class="search-input" method="GET">
                             <input type="text" placeholder="Tìm kiếm theo địa điểm, quận, tên đường...">
@@ -52,7 +58,11 @@
 
                     </div>
                 </div>
+                <!-- phần thanh tìm kiếm phụ,hiện ra khi scroll qua thanh tìm kiếm chính -->
             </div>
+            <!-- thanh header -->
+
+            <!-- phần giới thiệu trang -->
             <div class="main-bar">
                 <div class="info">
                     <div class="logo">
@@ -66,15 +76,14 @@
                     <p class="short">Ứng dụng tìm kiếm phòng trọ miễn phí cho người đi thuê hàng đầu Việt Nam</p>
                     <div class="search-box">
                         <div class="dropdown">
-                            <button type="button" class="dropBtn" id="mapMarkerButton"><i class="fas fa-map-marker-alt icon"></i>
-                                Vị trí
-                            </button>
-
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Hà Nội</a>
-                                <a class="dropdown-item" href="#">Đà Nẵng</a>
-                                <a class="dropdown-item" href="#">TP.Hồ Chí Minh</a>
-                            </div>
+                            <span><i class="fas fa-map-marker-alt icon"></i></span>
+                            <!-- nút chọn vị trí -->
+                            <select name="city" id="" class="dropBtn">
+                                <option value="" selected>Tất cả thành phố</option>
+                                <option value="Hanoi">Hà Nội</option>
+                                <option value="">Đà Nẵng</option>
+                                <option value="">TP. Hồ Chí Minh</option>
+                            </select>
                         </div>
                         <form action="" class="search-input" method="GET">
                             <input type="text" placeholder="Tìm kiếm theo địa điểm, quận, tên đường...">
@@ -97,7 +106,10 @@
                     </div>
                 </div>
             </div>
+            <!-- phần giới thiệu trang -->
+
         </div>
+        <!-- thân trang -->
         <div class="body">
             <div class="trending">
                 <h2>Xu hướng tìm kiếm</h2>
@@ -345,6 +357,7 @@
                 </div>
             </div>
         </div>
+        <!-- thân trang -->
         <!-- Footer -->
         <footer class="page-footer font-small unique-color-dark">
 
