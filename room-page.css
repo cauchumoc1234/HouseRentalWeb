@@ -21,10 +21,38 @@
 .filter form>div {
     margin-bottom: 15px;
 }
+.filter form input[type="range"]{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.filter form button{
+    flex-basis: 100%;
+    width: 100%;
+    background-color: rgb(255, 130, 151);
+    border-radius: 15px;
+    border: none;
+    padding: 10px 0;
+    font-weight: 500;
+}
 
 @media only screen and (max-width: 768px) {
     .body .filter {
         padding: 30px 10%;
         margin-bottom: 30px;
+    }
+    .body .filter form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .body .filter form div{
+        flex-basis: 30%;
     }
 }
