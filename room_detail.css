@@ -1,0 +1,87 @@
+.extra-menu{
+    display: flex !important;
+}
+.body{
+    transform: translateY(200px);
+    margin-bottom: 250px;
+    min-height: 100px;
+}
+.slide-show{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+.slide-show img{
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+.slide-show > img:not(:first-child){
+    display: none;
+}
+.slide-show .button{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0 3%;
+    height: 100%;
+    align-items: center;
+}
+.slide-show .button button{
+    border: none;
+    background-color: rgba(82, 80, 80, 0.4);
+    transition: 0.3s;
+    outline: none;
+    box-sizing: content-box;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    color: white;
+}
+.slide-show .button button:hover{
+    background-color: rgba(53, 53, 53, 0.7);
+}
+.room-detail{
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 0 15%;
+}
+.room-detail > div{
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.room-detail .top-info{
+    margin-right: 0px;
+}
+h4{
+    background-color: rgb(245, 244, 244);
+    padding: 5px;
+    border-radius: 15px;
+}
+h4 i{
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.room-info div div:first-child{
+    font-size: 12px;
+    color: rgb(88, 86, 86);
+}
+.room-info span{
+    color: black;
+}
+@media only screen and (max-width: 768px){
+    .slide-show img{
+        width: 80%;
+    }
+    .slide-show .button{
+        width: 80%;
+    }
+}
