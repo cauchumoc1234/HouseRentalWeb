@@ -386,6 +386,7 @@ footer div {
 }
 .drop-notify{
   position: relative;
+  margin-left: 20px;
 }
 .note-table{
   display: flex;
