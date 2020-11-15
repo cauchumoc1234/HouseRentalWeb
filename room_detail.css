@@ -124,10 +124,14 @@ h4 i{
     padding: 0px 0 3px 0;
 }
 .other-cmt > a:last-child{
-    font-size: 14px;
+    font-size: 12px;
+    padding-left: 3%;
+    color: rgb(83, 82, 82);
+    font-style: italic;
+
 }
 .comment {
-    padding: 0 5px;
+    padding: 0 4%;
     border-bottom: 1px solid rgb(214, 201, 201);
 }
 .comment p{
@@ -136,6 +140,7 @@ h4 i{
 }
 .comment > a{
     font-size: 14px;
+    font-weight: 500;
 }
 .comment .time{
     font-size: 10px;
