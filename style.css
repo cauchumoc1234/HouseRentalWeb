@@ -43,17 +43,20 @@
   display: flex;
   flex-wrap: wrap;
 }
+.large .drop-notify{
+  margin-right: 10px;
+}
 .top-bar .large > span {
   color: white;
   margin: 0 16px;
   box-sizing: border-box;
   cursor: pointer;
 }
-.top-bar .large a {
+.top-bar .large > a {
   color: white;
   text-decoration: none;
 }
-.top-bar .large a:first-child {
+.top-bar .large >a:first-child {
   margin-left: 15px;
 }
 .main-bar {
@@ -379,6 +382,61 @@ footer div {
   display: block;
   text-align: center;
   padding-top: 15px;
+}
+.drop-notify{
+  position: relative;
+}
+.note-table{
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 300px;
+  background-color: #f7346f;
+  top: 120%;
+  left: 10%;
+  transition: 0.3s;
+}
+.drop-notify:hover .note-table{
+  visibility: visible;
+  opacity: 1;
+}
+
+.note-table a{
+  padding: 8px 0;
+}
+.drop-notify a{
+  color: #ffffff;
+  text-align: center;
+}
+.list-noti{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+}
+.list-noti li{
+  padding: 2% 5%;
+}
+.list-noti li:not(:last-child){
+  border-bottom: 1px solid rgb(226, 220, 220);
+}
+.list-noti li a{
+  font-size: 12px;
+  color: gray;
+  display: block;
+  text-align: left;
+  height: 100%;  
+  width: 100%;
+}
+.list-noti li:hover{
+  background-color: antiquewhite;
+  transition: 0.3s;
+}
+.list-noti li:hover a{
+  text-decoration: none;
 }
 /* NMDung chinh sua css */
 .nmd-footer {

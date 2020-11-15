@@ -37,6 +37,17 @@
                             <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
                             <span class="address">10 Đường sô 4, Phường Hiệp Bình Phước, Quận Thủ Đức, Hồ Chí Minh</span>
                         </div>
+                        <div class="rate-head">
+                            <span>Đã xem: <span>1975</span></span>
+                            <span>Đánh giá: 3.0 <div class="star"> 
+                                <span class="fa fa-star st-checked"></span>
+                                <span class="fa fa-star st-checked"></span>
+                                <span class="fa fa-star st-checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div></span>
+                            
+                        </div>
                     </div>
                     <!-- thông tin chủ -->
                     <div class="owner-info own col-12">
@@ -103,6 +114,56 @@ giá 1tr3-1tr5/tháng/người ( bao gồm điện nước + wifi , không ph
                             </pre>
                         </div>
                     </div>
+                    <div class="comment-section">
+                        <div class="title">
+                            <span>Bình luận</span>
+                            <div class="rate-section">
+                                <button class="rate-btn btn btn-warning">Đánh giá</button>
+                                <div class="overlay">
+                                    <input type="radio" name="rate"  id="rate-1">
+                                    <input type="radio" name="rate"   id="rate-2">
+                                    <input type="radio" name="rate"   id="rate-3">
+                                    <input type="radio" name="rate"   id="rate-4">
+                                    <input type="radio" name="rate"   id="rate-5">
+                                    <label for="rate-1" class="rate" id="s1"><i class="fa fa-star" aria-hidden="true"></i></label>
+                                    <label for="rate-2" class="rate" id="s2"><i class="fa fa-star" aria-hidden="true"></i></label>
+                                    <label for="rate-3" class="rate" id="s3"><i class="fa fa-star" aria-hidden="true"></i></label>
+                                    <label for="rate-4" id="s4" class="rate"><i class="fa fa-star" aria-hidden="true"></i></label>
+                                    <label for="rate-5" id="s5" class="rate"><i class="fa fa-star" aria-hidden="true"></i></label>
+                                    <button id="del-rate" >Xoá</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="other-cmt">
+                                <div class="comment">
+                                    <a href="#">Thành Draw</a>
+                                    <span class="time">5 giờ trước</span>
+                                    <p>Phòng an ninh tốt,hay mất dép</p>
+                                </div>
+                                <div class="comment">
+                                    <a href="#">G-Dragon</a>
+                                    <span class="time">10 giờ trước</span>
+                                    <p>Bắt ở với Sơn Tùng rate 1*</p>
+                                </div>
+                                <div class="comment">
+                                    <a href="#">Tiến Bịp</a>
+                                    <span class="time">15 giờ trước</span>
+                                    <p>Phòng không có bình đá</p>
+                                </div>
+                                <div class="comment">
+                                    <a href="#">Trường Con</a>
+                                    <span class="time">1 ngày trước</span>
+                                    <p>Không cho nấu cơm không ăn trực được, 1*</p>
+                                </div>
+                                <a href="#" class="ml-2">Xem tất cả</a>
+                            </div>
+                            <div class="your-cmt">
+                                <textarea name="" id="" cols="30" rows="1" maxlength="150" placeholder="Nhập bình luận..."></textarea>
+                                <button>Gửi</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,5 +174,42 @@ giá 1tr3-1tr5/tháng/người ( bao gồm điện nước + wifi , không ph
     <script src="./load_hd_ft.js"></script>
     <script src="./drop_menu.js"></script>
     <script src="slide-show.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".rate-btn").click(function(){
+                
+                // $(".overlay").css("visibility","visible");
+                console.log($(".overlay").css("visibility"));
+                if($(".overlay").css("visibility") == "hidden"){
+                    $(".overlay").css("visibility","visible")
+                    $(".overlay").css("opacity","1")
+                }
+                else{
+                    $(".overlay").css("visibility","hidden")
+                    $(".overlay").css("opacity","0")
+                }
+            }
+            )
+            $("[name='rate']").change(function(){
+                for(var i of $(".rate")){
+                    if($(i).index() <= ($(this).index() + 5)){
+                        // $(i).css("color","yellow");
+                        $(i).addClass("yellow")
+                    }
+                    else if($(i).index() > ($(this).index() + 5)){
+                        // $(i).css("color","black");
+                        $(i).removeClass("yellow")
+                    }
+                }
+            })
+            $("#del-rate").click(function(){
+                $("input:checked")[0].checked =false;
+                for(var i of $(".rate")){
+                    // $(i).css("color","black");
+                    $(i).removeClass("yellow")
+                }
+            })
+        })
+    </script>
 </body>
 </html>
