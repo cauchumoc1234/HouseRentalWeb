@@ -126,6 +126,7 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border-right: 1px solid #bfbfbf;
+  z-index: 1;
 }
 .dropdown span {
   display: flex;
@@ -394,9 +395,10 @@ footer div {
   position: absolute;
   width: 300px;
   background-color: #f7346f;
-  top: 120%;
+  top: 100%;
   left: 10%;
   transition: 0.3s;
+  z-index: 30;
 }
 .drop-notify:hover .note-table{
   visibility: visible;
@@ -416,6 +418,7 @@ footer div {
   padding: 0;
   text-align: left;
   background-color: rgb(255, 255, 255);
+  z-index: 30;
 }
 .list-noti li{
   padding: 2% 5%;
