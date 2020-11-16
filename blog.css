@@ -12,9 +12,6 @@ body{
 .top-ct > h2,h6{
     text-align: center;
 }
-.main-ct{
-    /* border-bottom: 1px solid gray; */
-}
 .main-ct .img-ct{
     width: 100%;
     text-align: center;

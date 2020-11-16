@@ -23,9 +23,6 @@
     position: absolute;
     transition: 0.15s;
 }
-.slide-show > img:not(:first-child){
-    /* display: none; */
-}
 .slide-show .button{
     position: absolute;
     top: 0;
