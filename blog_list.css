@@ -33,6 +33,7 @@ h1{
 }
 .blog .info{
     padding: 0 2%;
+    max-width: 100%;
 }
 .blog .info .title{
     font-weight: 500;
@@ -43,4 +44,13 @@ h1{
 .pagnition{
     display: flex;
     justify-content: center;
+}
+.summary{
+    height: 50%;
+    white-space:wrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.summary::after{
+    content: "...";
 }
