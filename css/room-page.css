@@ -12,6 +12,7 @@
     margin: 0 auto;
     padding: 30px 30px;
     border-radius: 15px;
+    align-self: flex-start;
 }
 
 .filter>h2 {
@@ -41,7 +42,13 @@
     padding: 10px 0;
     font-weight: 500;
 }
-
+.room-type h4{
+    display: inline-block;
+    margin-right: 10px;
+}
+.room-type > span{
+    display: inline-block;
+}
 @media only screen and (max-width: 768px) {
     .body .filter {
         padding: 30px 10%;

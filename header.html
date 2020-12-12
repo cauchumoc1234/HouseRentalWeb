@@ -1,9 +1,10 @@
+
 <!-- thanh header -->
 <div class="top-bar">
     <!-- thanh phía trên header -->
     <div class="large">
         <div class="drop-notify">
-            <button class="notify"><i class="far fa-bell"></i>Thông báo</button>
+            <button class="notify" id="note-btn"><i class="far fa-bell"></i>Thông báo</button>
             <div class="note-table">
                 <ul class="list-noti">
                     <li><a href="1">Phòng bạn thích bị thuê con mẹ mất rồi</a></li>
@@ -56,3 +57,12 @@
     <!-- phần thanh tìm kiếm phụ,hiện ra khi scroll qua thanh tìm kiếm chính -->
 </div>
 <!-- thanh header -->
+<script>
+    $("#note-btn").click(function(){
+        // $(".popup-noti").fadeIn(300);
+        $(".popup-noti").css({"visibility": "visible","opacity":"1"})
+    })
+    $(".popup-noti").click(function(){
+        $(".popup-noti").css({"visibility": "hidden","opacity":"0"})
+    })
+</script>

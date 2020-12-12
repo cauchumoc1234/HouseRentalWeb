@@ -2,7 +2,53 @@
   box-sizing: border-box;
   outline: none;
 }
+.root{
+  position: relative;
+}
+.root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.body{
+  min-height: 40vh;
+  flex-grow: 1;
+  /* transform: translateY(30%); */
+}
+.popup-noti{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  transition: linear 0.3s;
+}
+.note-tab{
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
 
+}
+.note-tab .list-noti{
+  height: 70%;
+  border: 1px solid rgb(211, 205, 205);
+}
+.note-tab .list-noti a{
+  font-size: 13px;
+}
+.note-pag{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 .header > div:not(:first-child) {
   position: relative;
   transform: translateY(40px);
@@ -26,17 +72,14 @@
   min-height: 44px;
   padding: 10px;
   box-sizing: initial;
-  justify-content: space-around;
+  /* justify-content: space-evenly; */
   background-color: rgb(235, 93, 147);
   display: none;
 }
 
-.top-bar .extra-menu .logo {
-  width: auto;
-}
-
 .top-bar .extra-menu .search-box {
   max-height: 44px;
+  margin-left: 30px;
 }
 .top-bar .large {
   display: flex;
@@ -64,6 +107,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://images.pexels.com/photos/2082087/pexels-photo-2082087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
       no-repeat 30% center;
+  margin-bottom: 30px;
   transform: translateY(40px);
 }
 
@@ -73,11 +117,11 @@
 
 .logo {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  /* width: 50%; */
+  /* justify-content: space-between; */
+  margin-left: 44px;
   align-items: center;
 }
-
 .option a {
   display: inline-block;
   margin-left: 20px;
@@ -98,7 +142,10 @@
 
 .search-box {
   display: flex;
-  max-width: 600px;
+  width: 80%;
+  max-width: 700px;
+  flex-grow: 2;
+  justify-content: center;
 }
 
 .info .short {
@@ -131,7 +178,7 @@
   display: flex;
   align-items: center;
 }
-.search-box .dropdown .dropBtn {
+.dropBtn {
   background-color: rgba(255, 255, 255, 0.9);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -139,6 +186,7 @@
   border: none;
   padding: 10px 10px 10px 0px;
   outline: none;
+  font-size: 18px;
 }
 
 .dropdown .dropdown-menu {
@@ -234,7 +282,9 @@ body {
   width: 84%;
   margin-bottom: 30px;
 }
-
+.main-section .row > div{
+  align-self: flex-start;
+}
 .main-section .top {
   display: flex;
   justify-content: space-between;
@@ -403,7 +453,7 @@ footer div {
   background-color: #f7346f;
   top: 100%;
   left: 10%;
-  transition: 0.3s;
+  transition: 0.2s;
   z-index: 30;
 }
 .drop-notify:hover .note-table{
@@ -423,13 +473,14 @@ footer div {
   border: none;
   outline: none;
 }
+
 .list-noti{
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: left;
   background-color: rgb(255, 255, 255);
-  z-index: 30;
+  z-index: 100;
 }
 .list-noti li{
   padding: 2% 5%;
@@ -457,13 +508,9 @@ footer div {
     max-width: 1190px;
   }
   .logo-top {
-    position: absolute;
+    /* position: absolute;
     left: 120px;
-    top: 35px;
-  }
-  .search-box {
-    position: absolute;
-    right: 200px;
+    top: 35px; */
   }
   .article-views {
     position: absolute;
@@ -472,7 +519,7 @@ footer div {
 @media only screen and (max-width: 768px) {
   .body{
     margin: 0px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .items{
     flex-wrap: wrap;
@@ -509,8 +556,9 @@ footer div {
   .top-bar .extra-menu {
     flex-direction: column;
   }
-  .dropBtn {
+  .dropBtn, .search-input input {
     overflow: hidden;
+    font-size: 14px;
   }
   .search-box{
       position: initial;
@@ -528,5 +576,4 @@ footer div {
   .app > a{
     margin-top: 10px;
   }
-  
 }

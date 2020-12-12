@@ -1,0 +1,27 @@
+.rooms{
+    height: 90% !important;
+}
+.rooms .room {
+    height: 20%;
+    
+}
+.room-img{
+    height: 100%;
+}
+.room-info{
+    height: 100%;
+    overflow-y: scroll;
+}
+.room-detail .line span,.room-info p{
+    font-size: 14px;
+}
+@media only screen and (max-width:768px){
+    .room-detail .line span{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:568px){
+    .room-detail .line span{
+        font-size: 0.8rem;
+    }
+}
