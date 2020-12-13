@@ -21,16 +21,16 @@
             <div class="row">
                 <div class="col-12 col-md-3 filter">
                     <h2>Bộ lọc</h2>
-                    <form action="" method="post">
-                        <div>
-                            <h4>Giá thấp hơn</h4>
+                    <form action="" method="post" class="row">
+                        <div class="col-12">
+                            <h4 class="op">Giá thấp hơn</h4>
                             <span><span id="pr-value">8</span> triệu</span>
                             <br>
                             <input type="range" name="price" id="price" type="range" min="0.5" max="15" step="0.5" value="8">
                         </div>
-                        <div class="room-type">
-                            <h4>Loại phòng</h4>
-                            <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="room-type col-12">
+                            <h4 class="op">Loại phòng <span class="showBtn"><i class="fa fa-caret-down" aria-hidden="true"></i></span></h4>
+                            
                             <div class="item">
                                 <input type="checkbox" id="room-type-1" value="">
                                 <label for="room-type-1">Chung cư mini</label>
@@ -44,8 +44,10 @@
                                 <label for="room-type-3">Tất cả</label>
                             </div>
                         </div>
-                        <div>
-                            <h4><label for="city">Thành phố</label></h4>
+                        <div class="col-12">
+                            <h4 class="op">Thành phố </h4>
+                            
+                            
                             <select name="city" id="city">
                             <option value="Hanoi">Hà Nội</option>
                             <option value="HCM">TP. Hồ Chí Minh</option>
@@ -53,8 +55,8 @@
                         </select>
                         </div>
                         
-                        <div id="district">
-                            <h4>Quận</h4>
+                        <div id="district" class="col-12">
+                            <h4 class="op">Quận <span class="showBtn"><i class="fa fa-caret-down" aria-hidden="true"></i></span></h4>
                             <div class="item">
                                 <input id="distr-1" value="Caugiay" type="checkbox">
                                 <label for="distr-1">Cầu Giấy</label>
@@ -81,8 +83,8 @@
                             </div>
                         </div>
                         
-                        <div class="facilities">
-                            <h4>Cơ sở vật chất</h4>
+                        <div class="facilities col-12">
+                            <h4 class="op">Cơ sở vật chất <span class="showBtn"><i class="fa fa-caret-down" aria-hidden="true"></i></span></h4>
                             <div class="item">
                                 <input type="checkbox" id="fac-1" value="">
                                 <label for="fac-1">WC riêng</label>
@@ -364,13 +366,14 @@
         <footer class="page-footer font-small unique-color-dark"></footer>
         <!-- Footer -->
     </div>
-    <script src="load_hd_ft.js"></script>
-    <script src="price_range.js"></script>
+    <script src="./js/load_hd_ft.js"></script>
+    <script src="./js/price_range.js"></script>
     <script>
         $(document).ready(function(){
-            $(".room-type span").click(function(){
-                $(this).css({"transform":"rotate(270deg)"})
-                $(".room-type .item").slideToggle();
+            $(".showBtn").click(function(){
+                console.log($(this).css("transform"));
+                $(this).toggleClass("rotate-90")
+                $(this).parent().siblings(".item").slideToggle();
             })
         })
     </script>

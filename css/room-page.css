@@ -10,7 +10,7 @@
 .body .filter {
     background-color: white;
     margin: 0 auto;
-    padding: 30px 30px;
+    padding: 5%;
     border-radius: 15px;
     align-self: flex-start;
 }
@@ -34,32 +34,43 @@
     transition: opacity .2s;
 }
 .filter form button{
-    flex-basis: 100%;
-    width: 100%;
+    width: 90%;
     background-color: rgb(255, 130, 151);
     border-radius: 15px;
     border: none;
-    padding: 10px 0;
+    padding: 10px 5%;
     font-weight: 500;
+    margin: auto;
 }
-.room-type h4{
-    display: inline-block;
+.showBtn{
     margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+
 }
-.room-type > span{
-    display: inline-block;
+.op {
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    display: none;
+}
+.rotate-90{
+    transform: rotate(-90deg);
+    transition: 0.2s;
 }
 @media only screen and (max-width: 768px) {
     .body .filter {
-        padding: 30px 10%;
+        padding: 30px 2%;
         margin-bottom: 30px;
     }
     .body .filter form{
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: space-between;
     }
-    .body .filter form div{
+    /* .body .filter form div{
         flex-basis: 30%;
-    }
+    } */
 }

@@ -2,7 +2,7 @@
     display: flex !important;
 }
 .body{
-    transform: translateY(200px);
+    transform: translateY(150px);
     margin-bottom: 250px;
     min-height: 100px;
 }
@@ -12,8 +12,8 @@
     justify-content: center;
     background-color: white;
     height: 400px;
-    width: 60%;
-    /* width: 800px; */
+    width: 70%;
+    border-radius: 10px;
     overflow: hidden;
 }
 .slide-show img{
@@ -69,15 +69,22 @@
 .rate-head > span:first-child{
     margin-right: 10px;
 }
-h4{
+.hd{
     background-color: rgb(245, 244, 244);
     padding: 5px;
     border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
 }
-h4 i{
+.hd i{
     padding: 10px;
-    border-radius: 50%;
-    color: white;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.room-name{
+    font-size: 20px;
+    padding-left: 10px;
 }
 .room-info div div:first-child{
     font-size: 12px;
@@ -133,12 +140,15 @@ h4 i{
     border: 1px solid rgb(233, 231, 231);
     padding: 0px 0 3px 0;
 }
-.other-cmt > a:last-child{
+.other-cmt > #view-allcmt{
     font-size: 12px;
     padding-left: 3%;
     color: rgb(83, 82, 82);
     font-style: italic;
-
+    cursor: pointer;
+}
+#view-allcmt:hover{
+    text-decoration: underline;
 }
 .comment {
     padding: 10px 4%;
@@ -203,20 +213,53 @@ h4 i{
 .add-to-wl:hover{
     background-color: rgb(236, 61, 61);
 }
+
 @media only screen and (max-width: 768px){
-    
+    .comment > a{
+        font-size: 14px;
+    }
+    .room-name{
+        font-size: 18px !important;
+    }
+    .room-address,.rate-head{
+        font-size: 14px;
+    }
+    .adjust-font{
+        font-size: 12px !important;
+    }
+    .hd{
+        font-size: 14px;
+    }
     .slide-show img{
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
     .slide-show{
-        width: 80%;
+        width: 90%;
+    }
+    .room-detail{
+        padding: 0 5%;
     }
 }
 
 @media only screen and (max-width: 568px){
     .slide-show{
         height: 30vh;
+    }
+    .comment > a{
+        font-size: 12px;
+    }
+    .room-name{
+        font-size: 16px !important;
+    }
+    .adjust-font{
+        font-size: 10px !important;
+    }
+    .hd{
+        font-size: 12px;
+    }
+    .room-address,.rate-head{
+        font-size: 12px;
     }
 }

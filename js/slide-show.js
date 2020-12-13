@@ -38,10 +38,10 @@ $(document).ready(function(){
         }
     })
     $(".next").click(function(){
-        for(let j = 0 ; j < $(".slide-img").length ; j++){
+        for(let j = 0 ; j < $(".slide-img").length; j++){
             let left = $(".slide-img").eq(j).css("left");
             left = left.substring( 0,left.length - 2)
-            if(left <= -6*w && j == 0){
+            if(left <= -5*w && j == 0){
                 initLeft();
                 break;
             }

@@ -84,6 +84,7 @@
 .top-bar .large {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 10px;
 }
 .large .drop-notify{
   margin-right: 10px;
@@ -332,13 +333,13 @@ body {
   color: black;
 }
 
-.room-info p {
+.room-info .room-name {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-.room-info span {
+.room-info > span {
   color: rgb(90, 88, 88);
   font-size: 16px;
 }
@@ -521,6 +522,10 @@ footer div {
     margin: 0px;
     /* margin-top: 20px; */
   }
+  .top-bar .large{
+    margin: auto;
+  }
+  
   .items{
     flex-wrap: wrap;
     justify-content: flex-start!important;
