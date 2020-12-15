@@ -127,7 +127,7 @@
     padding: 8px 10px 8px 10px;
     border: 1px solid rgb(218, 208, 208);
 }
-.comments .your-cmt button{
+.comments .your-cmt .post-cmt{
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -168,6 +168,16 @@
 }
 .rate-section{
     position: relative;
+}
+.rate-btn{
+    display: block;
+    /* height: 15px; */
+    font-size: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+    width: auto;
+    word-wrap: none;
 }
 .overlay{
     display: flex;

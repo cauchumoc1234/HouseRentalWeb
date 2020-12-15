@@ -11,7 +11,6 @@ body{
 }
 .blog{
     display: flex;
-    height: 150px;
     font-size: 12px;
     color: rgb(100, 100, 100);
 }
@@ -25,6 +24,7 @@ body{
     object-fit: cover;
     object-position: center center;
     border-radius: 15px;
+    padding: 0;
 }
 h1{
     margin-bottom: 10px;
@@ -53,4 +53,9 @@ h1{
 }
 .summary::after{
     content: "...";
+}
+@media only screen and (max-width:768px){
+    .blog{
+        padding: 0 5%;
+    }
 }

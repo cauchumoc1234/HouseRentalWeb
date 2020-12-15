@@ -80,10 +80,13 @@ iframe{
     padding: 20px 10px;
     margin-left: 20px;
     border-radius: 10px;
+    overflow-y: scroll;
+    transition: 0.2s;
 }
 @media only screen and (max-width: 768px){
     iframe{
         margin: 20px 2%;
+        
     }
     .account-nav{
         margin-left: 0;

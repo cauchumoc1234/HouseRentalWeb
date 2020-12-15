@@ -7,14 +7,18 @@ body{
 .body{
     transform: translateY(150px);
     min-height: 150px;
-    margin-bottom: 250px;
 }
 .top-ct > h2,h6{
-    text-align: center;
+    /* text-align: center; */
 }
 .main-ct .img-ct{
     width: 100%;
     text-align: center;
+}
+.intro{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: gray;
 }
 .img-ct{
     width: 100%;
@@ -29,6 +33,7 @@ body{
     font-size: 12px;
     font-style: italic;
 }
+
 .bottom-ct{
     padding-top: 5px;
     font-style: italic;

@@ -15,6 +15,7 @@ function showProfile(){
     }
     $("#acc-show").addClass("is-actived");
     $("#mainFrame").attr("src",profilePath)
+    
 }
 function showNotification(){
     $("#noti-show").addClass("is-actived");
@@ -24,6 +25,7 @@ function showNotification(){
         }
     }
     $("#mainFrame").attr("src",notiPath)
+    
 }
 function showLikedRooms(){
     $("#liked-show").addClass("is-actived");
@@ -33,4 +35,5 @@ function showLikedRooms(){
         }
     }
     $("#mainFrame").attr("src",likedRoomPath)
+    
 }
