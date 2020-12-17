@@ -1,11 +1,21 @@
-.extra-menu{
-    display: flex !important;
+.header .top-bar .extra-menu{
+    display: flex;
 }
 body{
     background-color: white;
 }
+.top-img{
+    height: 60vh;
+    min-height: 400px;
+}
+.top-img img{
+    height: 100%;
+    width: 100%;
+    object-position: 50%;
+    object-fit: cover;
+}
 .body{
-    transform: translateY(150px);
+    margin-top: 20px;
     min-height: 150px;
 }
 .top-ct > h2,h6{

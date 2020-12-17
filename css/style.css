@@ -59,7 +59,6 @@
   align-items: center;
   background-color: #f7346f;
   width: 100%;
-  min-height: 40px;
   position: fixed;
   z-index: 10;
   clear: right;

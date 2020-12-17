@@ -13,11 +13,14 @@
 </head>
 <body>
     <div class="header"></div>
+    <div class="top-img">
+        <img src="https://www.boutique-homes.com/wp-content/uploads/vacation-rentals/europe/norway/hellum-house-larvik-norway/holiday_home_norway_016.jpg" alt="">
+    </div>
     <div class="body">
         <div class="content col-11 col-md-10 mx-auto">
         <article>
             <div class="top-ct">
-                <h3 class="title">Kinh nghiệm tìm phòng trọ: bẫy lừa đảo khi thuê phòng sinh viên cần chú ý</h3>
+                <h1 class="title">Kinh nghiệm tìm phòng trọ: bẫy lừa đảo khi thuê phòng sinh viên cần chú ý</h1>
                 <h6 class="date">Aug 26, 2020</h6>
             </div>
             <div class="main-ct">
@@ -61,5 +64,21 @@
     <footer></footer>
     <script src="./js/load_hd_ft.js"></script>
     <script src="./js/drop_menu.js"></script>
+    <script>
+        $(document).ready(function(){
+            var iScrollPos = 0;
+            $(window).scroll(function () {
+                var iCurScrollPos = $(this).scrollTop();
+                if (iCurScrollPos > iScrollPos) {
+                        $(".extra-menu").hide();
+                } else {
+                        $(".extra-menu").css("display","flex")
+                }
+            iScrollPos = iCurScrollPos;
+            });
+
+        })
+        
+    </script>
 </body>
 </html>
