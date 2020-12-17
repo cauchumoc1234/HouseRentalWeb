@@ -57,6 +57,17 @@
 .item{
     display: none;
 }
+#city{
+    margin-top: 5px;
+    border: 1px solid gray;
+}
+@media only screen and (max-width: 1024px){
+    .main-section{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 200px;
+    }
+}
 @media only screen and (max-width: 768px) {
     .body .filter {
         padding: 30px 2%;
@@ -64,10 +75,6 @@
     }
     .body .filter form{
         display: flex;
-        /* flex-wrap: wrap; */
         justify-content: space-between;
     }
-    /* .body .filter form div{
-        flex-basis: 30%;
-    } */
 }
