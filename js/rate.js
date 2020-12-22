@@ -1,8 +1,6 @@
 $(document).ready(function(){
     $(".rate-btn").click(function(){
         
-        // $(".overlay").css("visibility","visible");
-        console.log($(".overlay").css("visibility"));
         if($(".overlay").css("visibility") == "hidden"){
             $(".overlay").css("visibility","visible")
             $(".overlay").css("opacity","1")
