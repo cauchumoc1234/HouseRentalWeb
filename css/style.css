@@ -13,7 +13,6 @@
 .body{
   min-height: 40vh;
   flex-grow: 1;
-  /* transform: translateY(30%); */
 }
 
 #link-profile{
@@ -28,6 +27,7 @@
   opacity: 1;
   z-index: 10;
 }
+/* thêm position */
 #link-profile img{
   height: 25px;
   width: 25px;
@@ -48,6 +48,7 @@
   align-items: center;
   transition: linear 0.3s;
 }
+/* css sửa div profile trên header */
 .profile{
   position: relative;
   
@@ -78,6 +79,7 @@
 .drop-menu li:hover{
   background-color: rgb(247, 231, 201);
 }
+/* css sửa div profile trên header */
 .note-tab{
   width: 50%;
   max-width: 400px;
