@@ -15,12 +15,18 @@
   flex-grow: 1;
   /* transform: translateY(30%); */
 }
+
 #link-profile{
   padding: 0 10px;
   margin-right: 20px;
+  position: relative;
 }
 #link-profile:hover{
   background-color:rgba(255, 100, 111, 0.5);
+}
+.profile:hover .drop-menu{
+  opacity: 1;
+  z-index: 10;
 }
 #link-profile img{
   height: 25px;
@@ -41,6 +47,36 @@
   justify-content: center;
   align-items: center;
   transition: linear 0.3s;
+}
+.profile{
+  position: relative;
+  
+}
+.profile a{
+  color: white;
+  text-decoration: none;
+}
+.profile .drop-menu{
+  position: absolute;
+  width: 90%;
+  list-style-type: none;
+  background-color: rgb(255, 255, 255);
+  left: 10%;
+  text-align: center;
+  padding: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+.profile .drop-menu a{
+  color: gray;
+}
+.drop-menu li{
+  padding: 8px 0px;
+  transition: 0.3s;
+}
+.drop-menu li:hover{
+  background-color: rgb(247, 231, 201);
 }
 .note-tab{
   width: 50%;

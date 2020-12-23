@@ -43,10 +43,10 @@
     margin: auto;
 }
 .showBtn{
-    margin-right: 10px;
     display: flex;
     justify-content: flex-end;
     padding: 10px;
+    padding-right: 0;
     transition: 0.2s;
 }
 .op {
@@ -60,6 +60,7 @@
 #city{
     margin-top: 5px;
     border: 1px solid gray;
+    width: 100%;
 }
 @media only screen and (max-width: 1024px){
     .main-section{
